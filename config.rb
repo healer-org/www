@@ -1,3 +1,7 @@
+require 'fog'
+
+Fog.credentials = { path_style: true }
+
 # Activate and configure extensions
 # https://middlemanapp.com/advanced/configuration/#configuring-extensions
 
@@ -15,6 +19,7 @@ page "/*.txt", layout: false
 
 activate :s3_sync do |s3_sync|
   s3_sync.bucket = "www.healer.global"
+  s3_sync.region = "us-east-2" # Ohio
 end
 
 # With alternative layout

@@ -1,5 +1,6 @@
 source "https://rubygems.org"
 
+gem "fog"
 gem "middleman", "~> 4.2"
 gem "middleman-autoprefixer", "~> 2.7"
 gem "middleman-s3_sync", "~> 4.0.3"
