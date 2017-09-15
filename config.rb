@@ -13,6 +13,10 @@ page "/*.xml", layout: false
 page "/*.json", layout: false
 page "/*.txt", layout: false
 
+activate :s3_sync do |s3_sync|
+  s3_sync.bucket = "www.healer.global"
+end
+
 # With alternative layout
 # page '/path/to/file.html', layout: 'other_layout'
 
