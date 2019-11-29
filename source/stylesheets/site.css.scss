@@ -1,33 +1,33 @@
 body {
   background-color: #fff;
   color: #555;
-  font-family: -apple-system, "Helvetica Neue", "Helvetica", "Droid Sans", sans-serif;
-  padding: 2vh 1rem;
-  text-align: center;
+  font-weight: 100;
 }
 
 a {
   color: rgba(#000, 0.7);
-
   &:focus,
   &:hover {
     color: rgba(#000, 0.6);
   }
 }
 
-#logo, #text {
-  margin: 10px auto;
+#logo {
+  align-content: center;
 }
 
-img, #text {
+#logo img {
   max-width: 500px;
+  width: 100%;
+  height: auto;
 }
 
-h2 {
-  color: #dd6666;
-  margin-bottom: 0;
+p strong {
+  font-weight: 500;
 }
 
-h2+p {
-  margin-top: 1rem;
+h4 {
+  color: #c21513;
+  text-transform: uppercase;
+  font-weight: 300;
 }
